@@ -1,0 +1,47 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    color: rgb(238, 238, 238);
+    font-family: sans-serif;
+}
+
+.fieldComp {
+    /* width: 30%; */
+    background-color: rgb(49, 54, 63);
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            align-self: center;
+            height: 4vh;
+            width: 50%;
+            background-color: rgba(118, 171, 174, 0.6);
+            border: none;
+            outline: none;
+        }
+    }
+
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    button {
+        background-color: rgba(238, 238, 238, 0.3);
+        width: 50%;
+        height: 5vh;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+    }
+
+
+}

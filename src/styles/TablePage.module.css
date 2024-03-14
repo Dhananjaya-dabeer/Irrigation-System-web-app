@@ -1,0 +1,22 @@
+.dataComponent {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+.displayNone {
+    display: none;
+}
+
+.add_btn {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        margin-right: 7%;
+        margin-top: 3%;
+        background: rgb(118, 171, 174);
+        width: 10%;
+        height: 4vh;
+    }
+}
