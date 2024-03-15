@@ -41,7 +41,7 @@ const AddDataComp = () => {
       return;
     }
     if (
-      !(irrigationInfo.startTime.length === 6 )||
+      !(irrigationInfo.startTime.length === 6) ||
       !(irrigationInfo.endTime.length === 6)
     ) {
       alert(
@@ -64,10 +64,8 @@ const AddDataComp = () => {
       status: statusArray[index],
     });
   }, [popup]);
-  console.log(irrigationInfo.startTime.length);
-  console.log(irrigationInfo.endTime.length);
   return (
-    <div className={style.parent}>
+    <div className={style.parent} onClick={(e) => e.stopPropagation()}>
       <div className={style.fieldComp}>
         <div className={style.plots}>
           <h4>Number of Plots to be irrigated - ex if 1 (D1) if 2 (D2) ... </h4>

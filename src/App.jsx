@@ -1,11 +1,13 @@
 import ContextProvider from "./context/ContextProvider";
 import TablePage from "./Pages/TablePage";
-
+import "./App.css"
 function App() {
   return (
-    <ContextProvider>
+  <div className="appContainer">
+      <ContextProvider >
       <TablePage />
     </ContextProvider>
+  </div>
   );
 }
 
