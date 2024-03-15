@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import dataContext from "../context/dataContext";
-
+import style from "../styles/TableComp.module.css";
 const TableComp = () => {
   const { data } = useContext(dataContext);
 
@@ -9,7 +9,7 @@ const TableComp = () => {
     {
       field: "id",
       headerName: "ID",
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -18,7 +18,7 @@ const TableComp = () => {
     {
       field: "plot",
       headerName: "Plot",
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -27,7 +27,7 @@ const TableComp = () => {
     {
       field: "motor",
       headerName: "Motor",
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -37,7 +37,7 @@ const TableComp = () => {
       field: "startTime",
       headerName: "Start Time",
       type: "number",
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -47,7 +47,7 @@ const TableComp = () => {
       field: "endTime",
       headerName: "End Time",
       type: "number",
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -57,7 +57,7 @@ const TableComp = () => {
       field: "runtime",
       headerName: "Run Time",
       type: "number",
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -67,7 +67,7 @@ const TableComp = () => {
       field: "interval",
       headerName: "Interval",
       type: "number",
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -78,7 +78,7 @@ const TableComp = () => {
       headerName: "Status",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
-      width: 160,
+      width: 100,
       headerClassName: "header",
       cellClassName: "cell",
       headerAlign: "center",
@@ -87,23 +87,33 @@ const TableComp = () => {
   ];
 
   return (
-    <div style={{ height: 600, width: "100%" }}>
-      <DataGrid
-        rows={data}
-        columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: { page: 0, pageSize: 5 },
-          },
-        }}
-        pageSizeOptions={[5, 10]}
-        checkboxSelection
-        sx={{
-          "& .MuiDataGrid-columnHeader, & .MuiDataGrid-cell": {
-            color: "white",
-          },
-        }}
-      />
+    <div
+    // style={{
+    //   display: "flex",
+    //   justifyContent: "center",
+    //   alignItems: "center",
+    //   height: "100vh",
+    // }}
+    >
+      <div style={{ height: 500 }}>
+        <DataGrid
+          style={{ borderRadius: "18px", background: "white" }}
+          rows={data}
+          columns={columns}
+          initialState={{
+            pagination: {
+              paginationModel: { page: 0, pageSize: 7 },
+            },
+          }}
+          pageSizeOptions={[7, 5, 10]}
+          checkboxSelection
+          sx={{
+            "& .MuiDataGrid-columnHeader, & .MuiDataGrid-cell": {
+              // color: ,
+            },
+          }}
+        />
+      </div>
     </div>
   );
 };

@@ -1,13 +1,15 @@
 .parent {
     display: flex;
     justify-content: center;
-    color: rgb(238, 238, 238);
+    color: black;
     font-family: sans-serif;
+    height: 84vh;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(255, 255, 255, 0.2)
 }
 
 .fieldComp {
     /* width: 30%; */
-    background-color: rgb(49, 54, 63);
+    background-color: #d9f0ff;
 
     div {
         display: flex;
@@ -17,7 +19,7 @@
             align-self: center;
             height: 4vh;
             width: 50%;
-            background-color: rgba(118, 171, 174, 0.6);
+            background-color: rgb(219, 215, 215);
             border: none;
             outline: none;
         }
@@ -33,7 +35,7 @@
     margin-bottom: 5%;
 
     button {
-        background-color: rgba(238, 238, 238, 0.3);
+        background: rgb(82, 190, 252);
         width: 50%;
         height: 5vh;
         border-radius: 8px;

@@ -1,7 +1,23 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(82, 190, 252) 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+
 .dataComponent {
     position: absolute;
     top: 5%;
     left: 30%;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .displayNone {
@@ -10,13 +26,16 @@
 
 .add_btn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 
     button {
-        margin-right: 7%;
+        cursor: pointer;
+        border: none;
+        outline: none;
         margin-top: 3%;
         background: rgb(118, 171, 174);
         width: 10%;
         height: 4vh;
+        border-radius: 8px;
     }
 }
