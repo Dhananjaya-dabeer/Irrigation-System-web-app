@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import TableComp from "../components/TableComp";
-import style from "../styles/TablePage.module.css";
 import AddDataComp from "../components/AddDataComp";
 import dataContext from "../context/dataContext";
+import style from "../styles/TablePage.module.css"
 function TablePage() {
   const { popup, setPopup } = useContext(dataContext);
 
@@ -12,7 +12,7 @@ function TablePage() {
   };
 
   return (
-    <div className={style.parent} onClick={() => setPopup(false)}>
+    <div className={popup ? `${style.parent} ${style.popup}` : `${style.parent}`} onClick={() => setPopup(false)}>
       <div className={style.table}>
         <TableComp />
       </div>

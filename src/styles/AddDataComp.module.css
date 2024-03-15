@@ -3,22 +3,26 @@
     justify-content: center;
     color: black;
     font-family: sans-serif;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(255, 255, 255, 0.2)
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2), 10px 10px 10px rgba(255, 255, 255, 0.2);
+    width: 50%;
 }
 
 .fieldComp {
-    /* width: 30%; */
-    background-color: #d9f0ff;
+    width: 90%;
 
-    div {
+
+
+    .inputFieldsContainer {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+
 
         input {
             align-self: center;
             height: 4vh;
-            width: 50%;
-            background-color: rgb(219, 215, 215);
+            width: 80%;
+            background-color: rgb(223, 223, 223);
             border: none;
             outline: none;
         }
@@ -26,22 +30,40 @@
 
 }
 
+.close_Btn {
+    display: flex;
+    justify-content: right;
+
+    img {
+        margin-top: 3%;
+        width: 2%;
+        cursor: pointer;
+    }
+}
+
 .add {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
 
     button {
         background: rgb(82, 190, 252);
-        width: 50%;
+        width: 40%;
         height: 5vh;
         border-radius: 8px;
         border: none;
         outline: none;
         color: white;
         cursor: pointer;
+    }
+
+    .clearall {
+        width: 20%;
+        background: pink;
+        margin-bottom: 3%;
     }
 
 

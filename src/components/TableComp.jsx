@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import dataContext from "../context/dataContext";
-import style from "../styles/TableComp.module.css";
+import "../styles/TableComp.css";
 const TableComp = () => {
   const { data } = useContext(dataContext);
 
@@ -87,14 +87,7 @@ const TableComp = () => {
   ];
 
   return (
-    <div
-    // style={{
-    //   display: "flex",
-    //   justifyContent: "center",
-    //   alignItems: "center",
-    //   height: "100vh",
-    // }}
-    >
+    <div>
       <div style={{ height: 500 }}>
         <DataGrid
           style={{ borderRadius: "18px", background: "white" }}
@@ -107,11 +100,6 @@ const TableComp = () => {
           }}
           pageSizeOptions={[7, 5, 10]}
           checkboxSelection
-          sx={{
-            "& .MuiDataGrid-columnHeader, & .MuiDataGrid-cell": {
-              // color: ,
-            },
-          }}
         />
       </div>
     </div>
