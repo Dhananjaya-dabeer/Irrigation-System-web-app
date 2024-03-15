@@ -1,4 +1,3 @@
-import AddDataPage from "./Pages/AddDataPage";
 import ContextProvider from "./context/ContextProvider";
 import TablePage from "./Pages/TablePage";
 
